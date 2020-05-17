@@ -46,8 +46,8 @@ model.add(Dense(units=10, activation='softmax'))##since we only have 10 categori
 
 model.compile(optimizer=SGD(lr=0.01), loss='categorical_crossentropy', metrics=['accuracy'])
 
-model.fit(x=x_train, y=y_train, epochs=10, batch_size=32)
+model.fit(x=x_train, y=y_train, epochs=30, batch_size=32)
 
-
+model.save(filepath='Image_Classifier.h5')
 
 
